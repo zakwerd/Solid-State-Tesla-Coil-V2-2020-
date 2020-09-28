@@ -16,6 +16,12 @@ Essentially, the interrupter is just a circuit that outputs a square wave. Becau
 
 Eventually, I want to make this Tesla Coil a "Musical Tesla Coil." Doing this is actually quite simple: you make the output signals of the interrupter match the frequency of musical notes. This can be done with an Arduino connected to a MIDI input in which the MIDI serial is converted into a note frequency.
 
+### Circuit Analysis
+
+![Interrupter Circuit Photo](https://user-images.githubusercontent.com/59108656/94471951-dc644d00-017e-11eb-86b4-4a0f826d36bd.png)  
+*Photo of my interrupter circuit*  
+
+
 ### Video Update
 [A full video update of my interrupter circuit can be found here](https://www.youtube.com/watch?v=m8oV7pfkEEA&t=31s&ab_channel=MajorityBonePodcast)
 
