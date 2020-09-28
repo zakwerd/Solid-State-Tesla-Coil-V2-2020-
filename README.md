@@ -7,10 +7,18 @@ I will be updating this page as I go to keep you updated on my progress and to s
 
 However, I hope this serves a comprehensive enough overview to give any non-engineers a general idea of how SSTCs function, while not being overly technical with explanations.
 
-## Introduction to Solid State Tesla Coils
+## Interrupter Circuit 
 
-### Spark Gap Coil Cycle  
-To understand how a solid-state Tesla Coil operates, it is good to have a rough understanding of how the less advanced spark-gap coil operates, which is explained nicely by [this wikipedia article](https://en.wikipedia.org/wiki/Tesla_coil) in the "Operation Cycle" section.
+### Overview  
+The interrupter is used to prevent the transistors on the inverter (in my case it's a half-bridge inverter) from overheating. The transistors of the inverter are being switched by the UCC drivers at the resonant frequency of the coil (around 250kHz). To prevent the transistors from overheating, the interrupter turns on the gate drivers for a much smaller period of time (e.g. 100Hz with a 10% duty cycle: 90% less on-time compared to if there wasn't an interrupter).
+
+Essentially, the interrupter is just a circuit that outputs a square wave. Because of this, it's quite easy to make an interrupter from a 555 timer chip. I've adopted a popular strategy of utilizing two 555 timers; an astable 555 timer's output is fed into the monostable 555 timer. By using potentiometers on each of the 555 circuits, I can thus have a controllable frequency and pulse-width. This enables me to create a variety of spark outputs.
+
+Eventually, I want to make this Tesla Coil a "Musical Tesla Coil." Doing this is actually quite simple: you make the output signals of the interrupter match the frequency of musical notes. This can be done with an Arduino connected to a MIDI input in which the MIDI serial is converted into a note frequency.
+
+### Video Update
+[A full video update of my interrupter circuit can be found here](https://www.youtube.com/watch?v=m8oV7pfkEEA&t=31s&ab_channel=MajorityBonePodcast)
+
 
 ## Credits
 
