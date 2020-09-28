@@ -21,6 +21,8 @@ Eventually, I want to make this Tesla Coil a "Musical Tesla Coil." Doing this is
 ![Interrupter Circuit Photo](https://user-images.githubusercontent.com/59108656/94471951-dc644d00-017e-11eb-86b4-4a0f826d36bd.png)  
 *Photo of my interrupter circuit*  
 
+On the left side, there is the astable 555 timer circuit. Its output (pin 3) is fed into pin 2 on the monostable 555 timer circuit. The left potentiometer is controlling the frequency of the final output signal (blue wire that the bottom probe is hooked to), and the right potentiometer is controlling the width of the final output signal. The blue LED is connected to the final signal output, allowing for a visual representation of the signal being created. The red LED is connected from power to ground to serve as a visual notification that the circuit is getting power in the case in which the blue LED is broken or one some other component is broken.
+
 
 ### Video Update
 [A full video update of my interrupter circuit can be found here](https://www.youtube.com/watch?v=m8oV7pfkEEA&t=31s&ab_channel=MajorityBonePodcast)
